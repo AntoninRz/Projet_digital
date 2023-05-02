@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+body {
+    background: #040613;   
+}
+header {
+    background: url(./media/bg.jpeg)no-repeat top center;
+    width: 100%;
+    overflow: hidden;
+}
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+#logo {
+    height: 40px;
+}
+ul {
+    width: 40%;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover {
+    background: rgb(38, 104, 124);
+}
+.contact {
+    border: solid rgba(119, 187, 18, 0.856);
+}
+.title {
+    margin: 80px;
+}
+h4 {
+    color: rgb(15, 158, 115);
+    padding: 12px 0;
+}
+h1 {
+    color: white;
+    font-size: 5rem;
+}
+button {
+    background: rgba(255, 255, 255, 0.26);
+    width: 200px;
+    height: 40px;
+    font-size: 1.2rem;
+    margin-top: 40px;
+}
+button:hover {
+    transform: translateX(4px);
+    border: 2px solid aquamarine;
+    background: rgb(38, 104, 124);
+}
+button:active {
+    transform: scale(0.9);
+}
+.project {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.ideas, .ser {
+    background: rgba(128, 128, 128, 0.199);
+    width: 250px;
+    height: 200px;
+    margin: 5px;
+}
+hr {
+    border: 1px solid aqua;
+    width: 40px;
+    margin: 0 20px 10px;
+}
+.icon {
+    width: 40px;
+    padding: 20px;
+}
+p {
+    width: 200px;
+    padding: 10px;
+}
+.ideas:hover {
+    border: solid aquamarine;
+}
+@media screen and (max-width: 925px) {
+    h1 {
+        font-size: 4rem;
+    }
+}
+@media screen and (max-width: 810px) {
+    .title {
+        margin: 40px;
+    }
+    li a {
+        padding: 14px 8px;
+    }
+}
+@media screen and (max-width: 695px) {
+    h1 {
+        font-size: 2rem;
+    }
+    li a, .contact {
+        padding: 14px 2px;
+        border: 1px solid rgb(15, 158, 115);
+    }
+    
+}
+article, section {
+    margin: 5%;
+}
+h2 hr {
+    float: left;
+    margin: 10px 5px 0 0;
+}
+.services {
+    margin: 40px 10%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.ser:hover, .ser p:hover {
+    color: black;
+    background: #66FCF1;
+}
+.works {
+    display: flex;
+}
+.work {
+    margin: 1%;
+    width: 15%;
+    height: 200px;
+}
+.article {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr ;
+    grid-template-areas: 
+    "a b"
+    "a c";
+}
+.art:nth-child(1) {
+    grid-area: a;
+    width: 99%;
+    height: 500px;
+}
+.art:nth-child(2) {
+    grid-area: b;
+    width: 99%;
+    height: 245px;
+    padding: 5px;
+}
+.art:nth-child(3) {
+    grid-area: c;
+    width: 99%;
+    height: 245px;
+    padding: 5px;
+}
